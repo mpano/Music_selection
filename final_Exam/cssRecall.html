@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS session</title>
+	<!-- This is where we apply internal css must be surrounded by tag <style></style>-->
+
+	<style>
+		p{
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.header-information{
+			color: green;
+		}
+		#expetion{
+			color: darkred;
+		}
+		#para{
+			font-size: 25px;
+		    color: violet;
+		    border: solid;
+		    border-color: black;
+		    margin: 10px;
+		    padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!--
+		we have three ways to use css
+		1. inline css -> are being inside the tags
+		2. internal css -> are placed under style section in head
+		3. external css -> are linked inside under head section
+		order: inline css > internal css > external css
+		N.B: for internal and external css must use ID and Class or html tags  different html tags
+		inorder access ID we use #
+		inorder accsess class we use .
+		for tags we use exactly tag element name
+		order: id > class > tag element
+		ID: unique identified of a certain tag element content
+		class: 
+	 -->
+
+	 <!--  example of inline css must be like attribute of tag style=""-->
+	 <h1 style="font-size: 60px; color: blue; background-color: gray;">Registration Forms</h1>
+
+	<h1 class="header-information">Internal CSS checking</h1>
+	<p>This is Web desing session</p>
+	<p id="para">In publishing and graphic design, Lorem ipsum is a placeholder <br/> text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available</p>
+	<hr/>
+	<p>In publishing and graphic design, Lorem ipsum is a placeholder <br/> text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available</p>
+
+	<hr/>
+	<h2 id="expetion" class="header-information"> take look , strong, em , span , b</h2>
+
+	<p > 
+		<strong>we can make this text bold by using strong</strong>  <br/>
+		<b>Even we can use b tag will do the same thing as strong</b> <br/>
+		<em>To make text italic</em> <br/>
+		In publishing and graphic design, Lorem ipsum is a placeholder <br/> text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available</p>
+	<br/>
+	<hr/>
+
+	<h1 style="font-size:20px;font-family: sans-serif;font-style: italic;">Image recall</h1>
+	<!-- 
+		img: it's tag for images
+		src: where image is located
+		alt: provide name
+	 -->
+	 <img src="./images/css-image.png" alt="css - images" style="width: 600px;height: 200px;">
+	 <h2>Refering outside</h2>
+	 <img src="../practical/test.png" alt="">
+	 <img src="../../test.png" alt="">
+
+	 <h2>Links outside</h2>
+	 <a href="./home.html" target="_blank">HOME</a>
+
+	 <h2>Link on online images</h2>
+	 <img src="https://picsum.photos/200/300" alt="online image">
+</body>
+</html>

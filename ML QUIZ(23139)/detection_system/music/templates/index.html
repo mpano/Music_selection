@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h3>This is Detection system</h3>
+    <p>         Welcome </p>
+
+    <form action="predict" method="post">
+        {% csrf_token %}
+        
+        <label for="">Enter your age</label>
+        <input type="number" name="age">
+        <label for="">   What's your Gender "1" for women , "0" for Men</label>
+        <input type="number" name="gender" id=""> <br>
+        <button type="submit">Predect</button>
+    </form>
+
+
+</body>
+</html>

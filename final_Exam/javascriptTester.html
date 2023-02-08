@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+    <style>
+        #trigger-event{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1. basic on javascrip: 
+            a. varibles
+        2. how to interact with html tags
+        3. DOM: document object Model
+        4. can be used to change styles without reloading page
+        5. it can be used for event and lister
+        6. it's surrounded by <script></script>
+     -->
+
+     <h1>Javascript in Action</h1>
+     <!-- let us use javascript to interact with html and give today's date -->
+     <div>
+        <p id="tester"></p>
+        <h2>Triggering fuction on certain event</h2>
+        <p id="trigger-event">This data need to be replaced </p>
+        <button onclick="changeParagraph()">Change information inside above id</button>
+     </div>
+    <!-- Multiplication table -->
+     
+        <input type="number" id="operand1" placeholder="Enter first Number"> <br/>
+        <input type="number" id="operand2" placeholder="Enter Second Number"> <br/>
+        <button onclick="multi()">Multply</button> <br/>
+     
+     <p style="font-size: 30px;font-weight: bold;"> Output Result<span id="result" style="color: blue;">  </span></p>
+
+     <!-- Multiplication script -->
+     <script>
+        function multi(){
+            var num1 = document.getElementById("operand1").value
+            var num2 = document.getElementById("operand2").value
+            document.getElementById("result").innerHTML = num1 * num2;
+        }
+     </script>
+
+
+
+
+
+     <script>
+        alert("Welcome to javascript session!")
+        document.getElementById("tester").innerHTML = "Hello message comes from javascript!"
+     </script>
+
+     <script>
+        function changeParagraph(){
+            document.getElementById("trigger-event").innerHTML = "My name is Jeremie"
+            document.getElementById("trigger-event").style.color ="red"
+        }
+     </script>
+
+
+
+</body>
+</html>
